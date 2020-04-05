@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: avenir;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/*** PARTIE AVEC LE LOGO ***/
+#body-header{
+    height: 10vh;
+    width: 20vw;
+    background-color: teal;
+    position: fixed;
+    left: 0;
+}
+
+/*** PARTIE BARRE DE NAVIGATION ***/
+#nav-bar{
+    height: 10vh;
+    width: 80vw;
+    background-color: olive;
+    position: fixed;
+    right: 0;
+}
+
+/*** PARTIE AVEC LES DIFFÉRENTES SECTIONS ***/
+/* Mettre en forme la partie "main" */
+main{
+    width: 100vw;
+    height: auto;
+    padding: 10vh 7.5vw 0;
+}
+
+/* Mettre en forme la partie "Act.23" */
+#act23{
+    height: 100vh;
+    width: 100%;
+    background-color: orchid; /* Retirer plus tard */
+}
+
+/* Mettre en forme la partie "Pollution numérique" */
+#pollution-numerique{
+    height: 100vh;
+    width: 100%;
+    background-color: rosybrown; /* Retirer plus tard */
+}
+
+/* Mettre en forme la partie "Écologie numérique" */
+#ecologie-numerique{
+    height: 100vh;
+    width: 100%;
+    background-color: skyblue; /* Retirer plus tard */
+}
+
+/* Mettre en forme la partie "Éco-conception" */
+#eco-conception{
+    height: 100vh;
+    width: 100%;
+    background-color: lightpink; /* Retirer plus tard */
+}
+
+/* Mettre en forme la partie "Ressources" */
+#ressources{
+    height: 100vh;
+    width: 100%;
+    background-color: royalblue; /* Retirer plus tard */
+}
+
+/*** PARTIE FOOTER ***/
+#body-footer{
+    width: 100vw;
+    height: 10vh;
+    background-color: aqua;
+}

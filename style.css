@@ -13,70 +13,110 @@ body{
     flex-wrap: wrap;
 }
 
+a{
+    color: white;
+    text-decoration: none;
+}
+
+
 /*** PARTIE AVEC LE LOGO ***/
 #body-header{
     height: 10vh;
-    width: 20vw;
+    width: 30vw;
     background-color: teal;
     position: fixed;
     left: 0;
+    z-index: 99;
 }
 
 /*** PARTIE BARRE DE NAVIGATION ***/
 #nav-bar{
     height: 10vh;
-    width: 80vw;
+    width: 70vw;
     background-color: olive;
     position: fixed;
     right: 0;
+    z-index: 99;
 }
 
 /*** PARTIE AVEC LES DIFFÉRENTES SECTIONS ***/
-/* Mettre en forme la partie "main" */
+/** Mettre en forme la partie "main" **/
 main{
     width: 100vw;
-    height: auto;
-    padding: 10vh 7.5vw 0;
+    padding: 0 7.5vw;
 }
 
-/* Mettre en forme la partie "Act.23" */
-#act23{
-    height: 100vh;
+main section {
+    padding-top: 10vh;
     width: 100%;
-    background-color: orchid; /* Retirer plus tard */
 }
 
-/* Mettre en forme la partie "Pollution numérique" */
-#pollution-numerique{
-    height: 100vh;
-    width: 100%;
-    background-color: rosybrown; /* Retirer plus tard */
+/** Mettre en forme la partie "Header" avec les titres des sections **/
+.section-header{
+    padding: 7.5%;
 }
 
-/* Mettre en forme la partie "Écologie numérique" */
-#ecologie-numerique{
-    height: 100vh;
-    width: 100%;
-    background-color: skyblue; /* Retirer plus tard */
+/* Cible les titres h2 des sections */
+main h2{
+    font-size: 1.75em;
+    text-transform: uppercase;
+    color: #272128;
+    -webkit-text-stroke: 1px white;
+    -webkit-font-smoothing: antialiased;
 }
 
-/* Mettre en forme la partie "Éco-conception" */
-#eco-conception{
-    height: 100vh;
-    width: 100%;
-    background-color: lightpink; /* Retirer plus tard */
+/** Mettre en forme la partie "Article" avec le contenu des sections **/
+.section-article{
+    padding: 7.5%;
+    background-color: rgb(30, 30, 30);
 }
 
-/* Mettre en forme la partie "Ressources" */
-#ressources{
-    height: 100vh;
-    width: 100%;
-    background-color: royalblue; /* Retirer plus tard */
+/* Cible les titres h3 des ressources */
+main h3{
+    padding-bottom: 5%;
 }
+
+/* Cilbe les liens "télécharger" de la section "ressources" */
+.ressources-lien{
+    display: block;
+    margin-top: 5%;
+}
+
+/** Mettre en forme la partie "Footer" avec la ligne verticale des sections **/
+.section-footer{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 7.5%;
+}
+
+/* Cible les titres des lignes "scroll" */
+main h4{
+    font-size: 0.75em;
+    padding: 5px;
+    background-color: black;
+    z-index: 1;
+}
+
+/* Cible les lignes verticales "scroll" */
+.ligne-verticale-scroll{
+    background-color: white;
+    width: 2.5px;
+    height: 10vh;
+    position: absolute;
+}
+
 
 /*** PARTIE FOOTER ***/
 #body-footer{
     width: 100vw;
-    height: 10vh;
-    background-color: aqua;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 0.5em;
+    background-color: rgb(17, 17, 17);
+    color: rgb(150, 150, 150);
 }

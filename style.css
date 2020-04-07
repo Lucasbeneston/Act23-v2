@@ -16,27 +16,47 @@ body{
 a{
     color: white;
     text-decoration: none;
+    margin: 0 5%;
 }
 
 
 /*** PARTIE AVEC LE LOGO ***/
 #body-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 10vh;
     width: 30vw;
-    background-color: teal;
+    background-color: black;
     position: fixed;
     left: 0;
     z-index: 99;
 }
 
+#body-header img{
+	max-width: 60%;
+	max-height: 60%;
+}
+
 /*** PARTIE BARRE DE NAVIGATION ***/
 #nav-bar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
     height: 10vh;
     width: 70vw;
-    background-color: olive;
+    background-color: black;
     position: fixed;
     right: 0;
     z-index: 99;
+}
+
+.ligne-horizontale{
+    background-color: white;
+    width: 25%;
+    height: 2.5px;
 }
 
 /*** PARTIE AVEC LES DIFFÉRENTES SECTIONS ***/
@@ -77,9 +97,16 @@ main h3{
 }
 
 /* Cilbe les liens "télécharger" de la section "ressources" */
+.ressources-container-lien{
+    padding: 5% 0% 0% 0%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
 .ressources-lien{
     display: block;
-    margin-top: 5%;
 }
 
 /** Mettre en forme la partie "Footer" avec la ligne verticale des sections **/

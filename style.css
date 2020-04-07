@@ -7,14 +7,14 @@
 body{
     font-family: avenir;
     background-color: black;
-    color: white;
+    color: rgb(200, 200, 200);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
 a{
-    color: white;
+    color: rgb(200, 200, 200);
     text-decoration: none;
     margin: 0 5%;
 }
@@ -54,7 +54,7 @@ a{
 }
 
 .ligne-horizontale{
-    background-color: white;
+    background-color: rgb(200, 200, 200);
     width: 25%;
     height: 2.5px;
 }
@@ -81,7 +81,7 @@ main h2{
     font-size: 1.75em;
     text-transform: uppercase;
     color: #272128;
-    -webkit-text-stroke: 1px white;
+    -webkit-text-stroke: 1px rgb(200, 200, 200);
     -webkit-font-smoothing: antialiased;
 }
 
@@ -128,7 +128,7 @@ main h4{
 
 /* Cible les lignes verticales "scroll" */
 .ligne-verticale-scroll{
-    background-color: white;
+    background-color: rgb(200, 200, 200);
     width: 2.5px;
     height: 10vh;
     position: absolute;
@@ -146,4 +146,94 @@ main h4{
     font-weight: 0.5em;
     background-color: rgb(17, 17, 17);
     color: rgb(150, 150, 150);
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    body{
+        background-color: brown;
+    }
+}
+
+/*** RESPONSIVE ORDINATEUR***/
+@media screen and (min-width: 1024px){
+    /*** PARTIE AVEC LE LOGO ***/
+    #body-header{
+        width: 20vw;
+    }
+
+    /*** PARTIE BARRE DE NAVIGATION ***/
+    #nav-bar{
+        width: 20vw;
+        top: 10vh;
+        height: 80vh;
+        left: 0;
+        flex-direction: row-reverse;
+    }
+
+    .ligne-horizontale{
+        background-color: white;
+        width: 15%;
+        height: 2.5px;
+    }
+
+    /*** PARTIE AVEC LES DIFFÉRENTES SECTIONS ***/
+    /** Mettre en forme la partie "main" **/
+    main{
+        width: 80vw;
+        padding: 0 7.5vw;
+        right: 0;
+        position: absolute;
+    }
+
+    main section {
+        margin: auto;
+        height: 100vh;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    section p{
+        font-size: 0.85em;
+    }
+
+    main h2{
+        font-size: 3em;
+        -webkit-text-stroke: 2px rgb(200, 200, 200);
+        color: black;
+    }
+
+    .section-header{
+        padding: 0%;
+        width: 55%;
+        text-align: right;
+        position: absolute;
+        z-index: 1;
+    }
+
+    .section-article{
+        margin-top: 4%;
+        width: 50%;
+        padding: 5% 5% 5% 10%;
+        position: absolute;
+        right: 0;
+    }
+
+    .section-footer{
+        width: 100%;
+        padding: 2.5%;
+        position: absolute;
+        bottom: 0;
+    }
+
+    /*** PARTIE FOOTER  ***/
+    #body-footer{
+        height: 10vh;
+        width: 20vw;
+        bottom: 0;
+        position: fixed;
+        font-size: 0.60em;
+        background-color: black;
+        text-align: center;
+    }
 }

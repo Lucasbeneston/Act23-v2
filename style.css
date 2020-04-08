@@ -205,15 +205,24 @@ main h4{
     /*** PARTIE AVEC LE LOGO ***/
     #body-header{
         width: 20vw;
+        height: 20vh;
+        /* border-right: 1px solid rgb(20, 20, 20); */
+    }
+
+    #body-header img{
+        max-width: 50%;
+        max-height: 50%;
     }
 
     /*** PARTIE BARRE DE NAVIGATION ***/
     #nav-bar{
         width: 20vw;
-        top: 10vh;
-        height: 80vh;
+        top: 20vh;
+        height: 75vh;
         left: 0;
         flex-direction: row-reverse;
+        padding-top: 5%;
+        /* border-right: 1px solid rgb(20, 20, 20); */
     }
 
     .navbar-container-link{
@@ -225,7 +234,7 @@ main h4{
     }
 
     .link-instagram{
-        margin-top: 50%;
+        margin-top: 40%;
     }
 
     .ligne-horizontale{
@@ -243,9 +252,10 @@ main h4{
     /** Mettre en forme la partie "main" **/
     main{
         width: 80vw;
-        padding: 0 7.5vw;
+        padding: 0 5vw;
         right: 0;
         position: absolute;
+        }
     }
 
     main section {
@@ -290,12 +300,14 @@ main h4{
 
     /*** PARTIE FOOTER  ***/
     #body-footer{
-        height: 10vh;
+        height: 5vh;
         width: 20vw;
         bottom: 0;
         position: fixed;
-        font-size: 0.60em;
+        font-size: 0.75em;
         background-color: black;
         text-align: center;
+        color: rgb(100, 100, 100);
+        /* border-right: 1px solid rgb(20, 20, 20); */
     }
 }

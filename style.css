@@ -19,6 +19,24 @@ a{
     margin: 0 5%;
 }
 
+.angle-bottom-left{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: -13px;
+    margin-left: -9px;
+}
+
+.angle-top-right{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: -13px;
+    margin-right: -9px;
+}
+
 
 /*** PARTIE AVEC LE LOGO ***/
 #body-header{
@@ -101,6 +119,7 @@ main h2{
 .section-article{
     padding: 7.5%;
     background-color: rgb(30, 30, 30);
+    position: relative;
 }
 
 /* Cible les titres h3 des ressources */
@@ -205,11 +224,20 @@ main h4{
         display: inline-flex;
     }
 
+    .link-instagram{
+        margin-top: 50%;
+    }
+
     .ligne-horizontale{
         background-color: white;
         width: 15%;
         height: 2px;
     }
+
+    .navbar-container-link:hover{
+        transform: scale(1.1);
+    }
+    
 
     /*** PARTIE AVEC LES DIFFÉRENTES SECTIONS ***/
     /** Mettre en forme la partie "main" **/

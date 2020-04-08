@@ -43,14 +43,26 @@ a{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     height: 10vh;
     width: 70vw;
     background-color: black;
     position: fixed;
     right: 0;
     z-index: 99;
+}
+
+.navbar-container-link{
+    display: flex;
+    flex-direction: row; /* row-reverse en tablette / ordinateur */
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end; 
+    width: 100%;
+}
+
+.link-responsive-none{
+    display: none;
 }
 
 .ligne-horizontale{
@@ -148,14 +160,28 @@ main h4{
     color: rgb(150, 150, 150);
 }
 
-
+/*** RESPONSIVE TABLETTES ***/
 @media screen and (min-width: 768px) and (max-width: 1024px){
-    body{
-        background-color: brown;
+    main h2{
+        font-size: 3em;
+        -webkit-text-stroke: 2px rgb(200, 200, 200);
+        color: black;
+    }
+
+    main section {
+        padding-top: 15vh;
+    }
+
+    .section-header{
+        width: 80%;
+    }
+
+    .ligne-horizontale{
+        width: 10%;
     }
 }
 
-/*** RESPONSIVE ORDINATEUR***/
+/*** RESPONSIVE ORDINATEURS ***/
 @media screen and (min-width: 1024px){
     /*** PARTIE AVEC LE LOGO ***/
     #body-header{
@@ -171,10 +197,18 @@ main h4{
         flex-direction: row-reverse;
     }
 
+    .navbar-container-link{
+        flex-direction: row-reverse;
+    }
+
+    .link-responsive-none{
+        display: inline-flex;
+    }
+
     .ligne-horizontale{
         background-color: white;
         width: 15%;
-        height: 2.5px;
+        height: 2px;
     }
 
     /*** PARTIE AVEC LES DIFFÉRENTES SECTIONS ***/

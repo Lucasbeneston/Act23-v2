@@ -1,0 +1,23 @@
+body {
+    background-color :#fff !important;
+    font-family :Serif !important;
+    font-size :15pt;
+    color: #000 !important;
+  }
+
+  h1, h2{
+    font-size :20pt;
+    text-transform: none;
+    -webkit-text-stroke: none;
+    -webkit-font-smoothing: none;
+  }
+
+#body-header,
+#nav-bar, 
+.angle-top-right, 
+.angle-bottom-left,
+.section-footer,
+#ressources,
+#body-footer{
+      display: none;
+  }

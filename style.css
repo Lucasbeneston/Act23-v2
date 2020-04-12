@@ -111,7 +111,7 @@ main h1, h2{
     font-size: 1.75em;
     text-transform: uppercase;
     color: #272128;
-    -webkit-text-stroke: 1px rgb(200, 200, 200);
+    -webkit-text-stroke: 1px rgb(225, 225, 225);
     -webkit-font-smoothing: antialiased;
 }
 
@@ -305,7 +305,7 @@ main h4{
         font-size: 0.75em;
         background-color: black;
         text-align: center;
-        color: rgb(100, 100, 100);
+        color: rgb(150, 150, 150);
         /* border-right: 1px solid rgb(20, 20, 20); */
     }
 }

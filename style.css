@@ -226,6 +226,7 @@ main h4{
 
     .navbar-container-link{
         flex-direction: row-reverse;
+        transition: transform 0.5s;
     }
 
     .link-responsive-none{
@@ -238,12 +239,13 @@ main h4{
 
     .ligne-horizontale{
         background-color: white;
-        width: 15%;
+        width: 20%;
         height: 2px;
+        margin-left: -7.5%;
     }
 
     .navbar-container-link:hover{
-        transform: scale(1.1);
+        transform: translateX(7.5%);
     }
 
 
